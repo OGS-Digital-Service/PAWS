@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en-US" data-lang="en-US" crm-lang="en-US" dir="ltr" crm-lcid="1033" same-site-mode="None">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,&#32;initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <script type="text/javascript"></script>
+        <title>
+            Search Awards &nbsp;· NYS OGS
+        </title>
+
+        <script src="/_resources/getresourcemanager?lang=en-US"></script>
+
+        <script type="text/javascript">
+            // Refresh all powerBI Iframes on Login in one Iframe
+            window.addEventListener("message", function (event) {
+                if (event && event.data && event.data == "refreshPowerBI") {
+                    $("iframe.powerbi").each(function () {
+                        this.src = this.src;
+                    });
+                }
+            });
+
+            // Fix for incorrect viewport width setting in IE 10 on Windows Phone 8.
+            if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+                var msViewportStyle = document.createElement("style");
+                msViewportStyle.appendChild(document.createTextNode("@-ms-viewport{width:auto!important}"));
+                document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+            }
+        </script>
+
+        <link href="https://ogstest.dynamics365portals.us/bootstrap.min.css?1609792086000" rel="stylesheet" />
+
+        <link href="https://ogstest.dynamics365portals.us/css/glyphicons-font-awesome-migrate.min.css" rel="stylesheet" />
+
+        <link href="https://ogstest.dynamics365portals.us/dist/preform.bundle-44b958182c.css" rel="stylesheet" />
+
+        <!--[if lt IE 9]>
+            <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <!--[if lt IE 10]>
+            <script src="~/js/formdata.js"></script>
+        <![endif]-->
+
+        <link href="https://ogstest.dynamics365portals.us/portal.css?1647015297000" rel="stylesheet" />
+        <link href="https://ogstest.dynamics365portals.us/theme.css?1644257113000" rel="stylesheet" />
+
+        <link href="https://ogstest.dynamics365portals.us/css/offlinenotification.css" rel="stylesheet" />
+    </head>
+    <body
+        data-sitemap-state="/search-award/:/"
+        data-dateformat="M/d/yyyy"
+        data-timeformat="h:mm tt"
+        data-datetimeformat="M/d/yyyy h:mm tt"
+        data-app-path="/"
+        data-ckeditor-basepath="/js/BaseHtmlContentDesigner/Libs/msdyncrm_/libs/ckeditor/"
+        data-case-deflection-url="/_services/search/7b138792-1090-45b6-9241-8f8d96d8c372"
+    >
+        <div id="offlineNotificationBar" style="display: none;">
+            <div id="web"></div>
+            <div id="message">You&#8217;re offline. This is a read only version of the page.</div>
+            <div id="close" onclick="this.parentElement.style.display='none';"></div>
+        </div>
+
+        <script type="text/javascript">
+            window["Microsoft"] = window["Microsoft"] || {};
+            window["Microsoft"].Dynamic365 = {
+                Portal: {
+                    User: {
+                        contactId: "",
+                        userName: "",
+                    },
+
+                    version: "9.4.8.62",
+                    type: "CustomerPortal",
+                    id: "dc48fa3b-eac4-4fca-aacf-37e54acbfbc7",
+                },
+            };
+        </script>
+
+        <!-- beginning of header -->
+        <div id="nygov-universal-navigation" class="nygov-universal-container" data-iframe="true">
+            <script type="text/javascript">
+                var _NY = {
+                    HOST: "static-assets.ny.gov",
+                    BASE_HOST: "www.ny.gov",
+                    hideSettings: true,
+                    hideSearch: true,
+                };
+                (function (document, bundle, head) {
+                    head = document.getElementsByTagName("head")[0];
+                    bundle = document.createElement("script");
+                    bundle.type = "text/javascript";
+                    bundle.async = true;
+                    bundle.src = "//static-assets.ny.gov/sites/all/widgets/universal-navigation/js/dist/global-nav-bundle.js";
+                    head.appendChild(bundle);
+                })(document);
+            </script>
+            <div id="nygov-universal-notification" class="nygov-universal-notification"></div>
+            <div id="nygov-global-notification" class="nygov-universal-notification" style="display: block;"></div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+
+        <script src="https://ogstest.dynamics365portals.us/resources/js/jspdf.umd.js"></script>
+        <script>
+            if (!window.jsPDF) window.jsPDF = window.jspdf.jsPDF;
+        </script>
+        <script src="https://ogstest.dynamics365portals.us/resources/js/jspdf.plugin.autotable.js"></script>
+        <script src="https://ogstest.dynamics365portals.us/resources/js/login.js"></script>
+        <link href="https://ogstest.dynamics365portals.us/resources/css/nys-global-nav.css" rel="stylesheet" />
+        <!-- NYS OGS CSS Global Nav Styles  -->
+        <link href="https://ogstest.dynamics365portals.us/resources/css/NYSOGS_Master_Styles.css" rel="stylesheet" />
+        <!-- NYS OGS CSS Styles with overrides -->
+        <script src="https://ogstest.dynamics365portals.us/resources/js/tablesort.js"></script>
+        <script src="https://ogstest.dynamics365portals.us/resources/portalGrid.js" type="text/javascript"></script>
+        <script src="https://ogstest.dynamics365portals.us/resources/documentList.js" type="text/javascript"></script>
+        <script src="https://ogstest.dynamics365portals.us/resources/contactList.js" type="text/javascript"></script>
+        <script src="https://ogstest.dynamics365portals.us/resources/contractorUpdateList.js" type="text/javascript"></script>
+        <script src="https://ogstest.dynamics365portals.us/resources/resellerList.js" type="text/javascript"></script>
+        <script src="https://ogstest.dynamics365portals.us/resources/awardContractorList.js" type="text/javascript"></script>
+        <script src="https://ogstest.dynamics365portals.us/resources/awardList.js" type="text/javascript"></script>
+        <script src="https://ogstest.dynamics365portals.us/resources/contractorList.js" type="text/javascript"></script>
+
+        <!-- NYS OGS Global Navigation -->
+        <div class="nys-global-header horizontal unstacked" role="navigation" aria-label="Main">
+            <div class="nav-toggle"><a href="#" role="button" id="nys-menu-control" tabindex="1">Navigation menu</a></div>
+            <h1><a href="/">Office of General Services | Procurement Services</a></h1>
+            <ul id="nys-global-nav">
+                <li aria-expanded="false">
+                    <a aria-label="Search Contracts" title="Search Contracts" href="/search-award/">Search Contracts</a>
+                </li>
+
+                <li aria-expanded="false">
+                    <a aria-label="Contract Notifications" title="Contract Notifications" href="/pns/">Contract Notifications</a>
+                </li>
+
+                <li aria-expanded="false">
+                    <a aria-label="Contract Performance Report" title="Contract Performance Report" href="/">Contract Performance Report</a>
+                </li>
+
+                <li aria-expanded="false">
+                    <a aria-label="eMarketplace" title="eMarketplace" href="https://ogs.ny.gov/procurement/emarketplace">eMarketplace</a>
+                </li>
+
+                <li aria-expanded="false">
+                    <a aria-label="Bid Opening Results" title="Bid Opening Results" href="/bid-opening/">Bid Opening Results</a>
+                </li>
+
+                <li aria-expanded="false">
+                    <a aria-label="Customer Services" title="Customer Services" href="/filedrequirements/">Customer Services</a>
+                </li>
+            </ul>
+        </div>
+        <!-- NYS OGS Global Navigation -->
+
+        <div id="mainContainer">
+            <!-- add anti-forgery token-->
+            <div id="antiforgerytoken" data-url="/_layout/tokenhtml"></div>
+            <script src="https://ogstest.dynamics365portals.us/dist/preform.bundle-2c5735c41a.js" type="text/javascript"></script>
+
+            <script src="https://ogstest.dynamics365portals.us/js/pcf/prop-types.js"></script>
+            <script src="https://ogstest.dynamics365portals.us/js/pcf/fela.js"></script>
+            <script src="https://ogstest.dynamics365portals.us/js/pcf/fela-dom.js"></script>
+            <script src="https://ogstest.dynamics365portals.us/dist/pcf.bundle-33229a14eb.js" type="text/javascript"></script>
+
+            <script src="https://ogstest.dynamics365portals.us/js/pcf/react-fela.js"></script>
+            <script src="https://ogstest.dynamics365portals.us/js/pcf/fluentui-react.js"></script>
+
+            <div class="row row-no-right-margin">
+                <div class="award-title"><h1>Search</h1></div>
+            </div>
+            <div class="row row-no-right-margin" id="mainSection">
+                <div class="col-md-2 col-xl-1 nopadding-right">
+                    <nav class="navbar navbar-ogssections">
+                        <div class="navbar-header" data-toggle="collapse" data-target="#myNavbar">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-plus-bootstrap">
+                                    <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-plus-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z" />
+                                        <path fill-rule="evenodd" d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z" />
+                                        <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                    </svg>
+                                </span>
+                            </button>
+                            <span class="navbar-brand" href="#">Sections</span>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">Search Contract Awards</a></li>
+                                <li><a href="/search-contractor/">Search By Contractor</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="navbar-ogssections-background"></div>
+                </div>
+                <div class="col-md-9 col-xs-12 col-md-pull-1 pull-right nopadding-right">
+                    <div class="pageHeader contractor-md"></div>
+                    <div class="col-xs-12 col-md-3 navbar__ogscolor">
+                        <div>
+                            <div class="searchTitle" style="min-width: 200px;">
+                                Search Contract Awards
+                            </div>
+                            <div class="form-group">
+                                <label class="searchIcon">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
+                                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                                    </svg>
+                                </label>
+                                <input class="searchKeyword--ogs" type="text" id="keyword" placeholder="" onkeydown="filterRecords('awardList')" aria-label="Search list of awards" />
+                            </div>
+                        </div>
+                        <span class="divider--line"></span>
+                        <nav class="navbar navbar-ogssections__filter">
+                            <div class="navbar-header" data-toggle="collapse" data-target="#myNavbar2">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar2">
+                                    <span class="icon-plus-bootstrap">
+                                        <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-plus-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z" />
+                                            <path fill-rule="evenodd" d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z" />
+                                            <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                        </svg>
+                                    </span>
+                                </button>
+
+                                <span class="navbar-brand navbar-brand__filter" href="#">Filter</span>
+                            </div>
+                            <div class="collapse navbar-collapse" id="myNavbar2">
+                                <form>
+                                    <div class="filterTitle">
+                                        Filter
+                                    </div>
+                                    <div class="filterSectionHeader">
+                                        Type
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="checkbox" id="commodityFilterCheck" onclick="filterRecords('awardList')" />
+                                        <label for="commodityFilterCheck" class="filterSectionItem">Commodity</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="checkbox" id="serviceFilterCheck" onclick="filterRecords('awardList')" />
+                                        <label for="serviceFilterCheck" class="filterSectionItem">Service</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="checkbox" id="technologyFilterCheck" onclick="filterRecords('awardList')" />
+                                        <label for="technologyFilterCheck" class="filterSectionItem">Technology</label>
+                                    </div>
+                                </form>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-xs-12 col-sm-9 col-md-9">
+                        <div class="pageHeader contractor-xs"><h2>Award Information</h2></div>
+                        <div class="row" style="padding-bottom: 5px;">
+                            <div class="col-xs-10 col-sm-10 col-md-10 searchResultLabel" id="searchResults_awardList"></div>
+                            <div class="col-xs-2 col-sm-2 col-md-2">
+                                <div class="dropdown" style="float: right;">
+                                    <button class="btn btn-default exportButton dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        Export
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="javascript:exportCSV('awardList')">CSV</a></li>
+                                        <li><a href="javascript:exportExcel('awardList')">Excel</a></li>
+                                        <li><a href="javascript:exportPDF('awardList')">PDF</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <table id="gridContainer_awardList" class="ogs-table"></table>
+                        <div id="pagerPanel_awardList"></div>
+                    </div>
+                    <div id="ProgressPanel" style="visibility: hidden;">
+                        <div class="progressPanelBG"></div>
+                        <div id="progressPanelMessage" class="progressPanelMessage">
+                            <div id="ProgressMessage" style="padding: 10px;">
+                                Please wait...
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        new AwardSearchGrid("awardList", true).loadList();
+                    </script>
+                </div>
+                <!-- end of div9-->
+            </div>
+            <!-- end of row -->
+
+            <script src="/js/pcf/loadPcfControls.js"></script>
+        </div>
+        <!-- OGS GLBOAL FOOTER CONTENT  -->
+        <div class="nys-global-footer">
+            <div class="footer-container">
+                <h3>Office of General Services | Procurement Services</h3>
+                <div class="social-media">
+                    <div class="social-media-title">
+                        <h4>CONNECT WITH US</h4>
+                    </div>
+                    <div class="social-media-links">
+                        <ul class="menu">
+                            <li>
+                                <a href="https://www.facebook.com/nysprocurement/" id="facebook" target="_blank" title=""><img src="/resources/img/ogs_fb.png" /><span style="line-height: 17px;">Facebook</span></a>
+                            </li>
+                            <li class="leaf">
+                                <a href="https://twitter.com/nyspro" id="twitter" target="_blank" title=""><img src="/resources/img/ogs_tw.png" /><span style="line-height: 17px;">Twitter</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- OGS GLBOAL FOOTER CONTENT ENDS HERE -->
+        <div id="nygov-universal-footer">
+            <div class="nygov-universal-footer" id="ny-universal-footer"></div>
+        </div>
+        <script src="/resources/js/nys-global-nav-header.js"></script>
+        <!--NYS OGS javascript must be at the BOTTOM of the BODY content in order to load correct-->
+        <script src="/resources/js/nys-fr-nav-header.js"></script>
+        <!--end of footer-->
+
+        <script src="/dist/postpreform.bundle-f4f91a6eb4.js" type="text/javascript"></script>
+
+        <script src="/dist/app.bundle-a91ffc8e89.js" type="text/javascript"></script>
+
+        <script src="/dist/default-1033.bundle-eda4e638fd.js" type="text/javascript"></script>
+
+        <script>
+            //this event will update the title of the page based on active breadcrumb
+            $(".breadcrumb").ready(function () {
+                if ($(".breadcrumb").is(":visible")) {
+                    document.querySelector("title").innerHTML = $(".breadcrumb > li.active").text() + "&nbsp;· NYS OGS";
+                }
+            });
+
+            function GoToNewEditor() {
+                var editCmsUrlSegment = "EditInCms";
+                var currentUrl = window.location.href;
+                if (currentUrl.indexOf("?") > -1) {
+                    var urlSegments = currentUrl.split("?");
+                    window.location.href = window.location.origin + "/" + editCmsUrlSegment + window.location.pathname + "?" + urlSegments[1];
+                } else {
+                    window.location.href = window.location.origin + "/" + editCmsUrlSegment + window.location.pathname;
+                }
+            }
+        </script>
+
+        <script>
+            if ("serviceWorker" in navigator) {
+                navigator.serviceWorker
+                    .getRegistrations()
+                    .then(function (registrations) {
+                        for (let registration of registrations) {
+                            registration.unregister();
+                        }
+                    })
+                    .catch(function (err) {
+                        console.log("Service Worker unregister action failed: ", err);
+                    });
+            }
+        </script>
+    </body>
+</html>
+<!-- Generated at 9/27/2022 3:06:30 PM -->
+<!-- Page OK -->

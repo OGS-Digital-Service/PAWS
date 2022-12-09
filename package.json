@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/OGS-Digital-Service/PAWS#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2"
+    "@11ty/eleventy": "^1.0.2",
+    "pa11y": "^6.2.3"
   },
   "dependencies": {
     "js-yaml": "^4.1.0"
